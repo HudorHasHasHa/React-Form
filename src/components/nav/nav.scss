@@ -1,0 +1,19 @@
+@import '../styleVariables/colors';
+
+.nav-background{
+  max-width: 1000px;
+  width: 100%;
+  background: $color-field;
+  display: flex;
+  justify-content: center;
+
+  a{
+    font-size: 25px;
+    margin: 20px;
+    color:  #AE67FA;
+    &:hover{
+      transition: 300ms;
+      color: $color-text;
+    }
+  }
+}

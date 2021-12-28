@@ -1,0 +1,24 @@
+@import '../styleVariables/fonts';
+@import '../styleVariables/colors';
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.header-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: $color-header;
+  padding: 0;
+  margin-bottom: 30px;
+
+  .header{
+    margin: 0 auto;
+    color: $gradient-text;
+    font-size: 40px;
+    padding: 20px 0;
+    margin: 0;
+    font-family: $text-font;
+    color: transparent;
+    background-image: $gradient-text;
+    -webkit-background-clip: text;
+  }
+}
+

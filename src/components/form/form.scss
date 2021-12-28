@@ -1,0 +1,81 @@
+@import '../styleVariables/colors';
+
+.form-wrapper{
+  max-width: 700px;
+  width: 100%;
+  background: $color-field;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  min-height: 540px;
+}
+.form-header{
+  display: flex;
+  justify-content: center;
+}
+
+h3{
+  font-size: 44px;
+  padding-bottom: 20px;
+  margin: 0;
+  color: #FFF;
+}
+
+.form-content{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 280px;
+  justify-content: flex-start;
+  align-items: center;
+  label{
+    color: white;
+  }
+  input,select{ 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    min-width: 200px;
+    max-width: 240px;
+    padding: 3px ;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .file{
+    border: 1px solid white;
+    color:white;
+    max-width: 240px;
+  }
+  .button{
+    max-width: 150px;
+    padding: 6px 32px;
+    border-radius: 12px;
+    border: none;
+    background: $gradient-text;
+    color: #FFF;
+  }
+  select,.file,.button{
+    cursor: pointer;
+  }
+  .image-content{
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .form-wrapper{
+    height: auto;
+    padding: 0 5px 30px 5px;
+    border-radius: 0;
+    max-width: 400px;
+    width: 100%;
+  }
+  h3{
+    font-size: 32px;
+  }
+  .nav-background a{
+    font-size: 22px;
+  }
+}
